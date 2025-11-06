@@ -1,0 +1,18 @@
+
+{{ define "base" }}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>EcoTrack 🌱</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header><h1>EcoTrack con fehejo 🌍</h1></header>
+  <main>{{ template "content" . }}</main>
+  <footer><p>Hecho por fehejo con 💚 en Go</p></footer>
+  <script src="/static/script.js"></script>
+</body>
+</html>
+{{ end }}

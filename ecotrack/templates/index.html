@@ -1,0 +1,15 @@
+
+
+{{ template "base" . }}
+
+{{ define "content" }}
+<h2>Registrar hábito ecológico con fehejo</h2>
+<form id="habitForm">
+  <input type="text" id="name" placeholder="Nombre del hábito" required>
+  <input type="text" id="type" placeholder="Tipo (agua, transporte...)" required>
+  <button type="submit">Agregar</button>
+</form>
+
+<h3>Hábitos registrados</h3>
+<ul id="habitList"></ul>
+{{ end }}
